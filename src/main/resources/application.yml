@@ -1,0 +1,16 @@
+server:
+  port: 8889
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///home/sages/Pobrane/config-repo
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8765/eureka
